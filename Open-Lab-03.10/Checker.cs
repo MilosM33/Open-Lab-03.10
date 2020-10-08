@@ -1,12 +1,10 @@
 ﻿using System;
-
+using System.Linq;
 namespace Open_Lab_03._10
 {
     public class Checker
     {
-        public int GetNumberOfCharsInString(char letter, string str)
-        {
-            throw new NotImplementedException();
-        }
+        public int GetNumberOfCharsInString(char letter, string str) => str.Count(p => p == letter);
+        
     }
 }
